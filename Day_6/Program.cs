@@ -2,17 +2,31 @@
 
 namespace Day_6
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
+	class Program
+	{
+		static void Main(string[] args)
+		{
+            
+			for (Int64 i = 0; i < 4; i = i - 100000000)
+			{
+				Console.WriteLine(i);
+			}
+            
+
+			int skaititajs = 0;
+			while (skaititajs != 5)
+			{
+				Console.WriteLine(skaititajs);
+				skaititajs++;
+			}
+
 			/*Console.WriteLine("Ievadiet skaitli: ");
 			string ievads = Console.ReadLine();
 			Console.WriteLine(PievienoSkaitli(ievads));
 			string izvade = PievienoSkaitli(ievads);
 			int skaits = izvade.Length;
 
-			Console.WriteLine(skaits);*/
+			Console.WriteLine(skaits);
 
 			Console.WriteLine("ievadi pirmo skaitli");
 			string ievade1 = Console.ReadLine();
@@ -30,27 +44,28 @@ namespace Day_6
 			else
 			{
 				Console.WriteLine("Kļūda! Cipari ir vienādi.");
-			}
-			Console.ReadLine();
-        }
+			}*/
 
+			Console.ReadLine();
+		}
+		//
 		static string PievienoSkaitli(string skaitlis)
 		{
 			string rezultats = "mans skaitlis ir " + skaitlis;
 			return rezultats;
 		}
-		static double SkaitluSalidzinasana (double skaitlis1, double skaitlis2)
+		static double SkaitluSalidzinasana(double skaitlis1, double skaitlis2)
 		{
 			double rezultats;
 
-			if(skaitlis1 < skaitlis2)
+			if (skaitlis1 < skaitlis2)
 			{
 				rezultats = skaitlis2;
 				return rezultats;
 			}
 			else
 			{
-				if(skaitlis2 < skaitlis1)
+				if (skaitlis2 < skaitlis1)
 				{
 					rezultats = skaitlis1;
 					return rezultats;
@@ -64,5 +79,5 @@ namespace Day_6
 			}
 			//return rezultats;
 		}
-    }
+	}
 }
